@@ -164,7 +164,7 @@ void main (void)
 		if(stop){
 			// If switch is pushed, advance a color.
 			if(!(portInput & BIT4)){
-				if(color < 6){
+				if(color < 8){
 					color = color + 1;
 					setColorRGB(color);
 				}else{
@@ -174,7 +174,7 @@ void main (void)
 			}
 
 		}else{
-			if(color < 6){
+			if(color < 8){
 				color = color + 1;
 				setColorRGB(color);
 			}else{
